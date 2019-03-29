@@ -1,13 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="md" type="dark" class="bg-dark">
-      <b-navbar-brand href="#"><img src="../assets/logo.png" class="logo" alt=""></b-navbar-brand>
+      <b-navbar-brand href="#"><img src="../assets/logo.png" class="logo" alt=""><router-link to="/"></router-link></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
+
+          <b-nav-item href="#"><router-link to="/contact">Contact</router-link></b-nav-item>
+          <b-nav-item href="#"><router-link to="/scores">Scores</router-link></b-nav-item>
           <b-nav-item href="#" disabled>Disabled</b-nav-item>
         </b-navbar-nav>
 
