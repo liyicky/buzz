@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>Contact Component</h1>
+            <img
+          
+          class="bg"
+          
+        >
   </div>
 </template>
 
@@ -10,6 +14,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>
