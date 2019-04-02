@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="md" type="dark" class="bg-dark">
-      <b-navbar-brand href="#"><img src="../assets/logo.png" class="logo" alt=""><router-link to="/"></router-link></b-navbar-brand>
+      <b-navbar-brand href="#" @click="goHome"><img src="../assets/logo.png" class="logo" alt="" ><router-link to="/"></router-link></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -24,6 +24,11 @@
 
 <script>
 export default {
+  methods: {
+    goHome() {
+      this.$route.push('')
+    }
+  }
   
 }
 </script>
