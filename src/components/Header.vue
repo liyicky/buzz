@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <b-navbar toggleable="md" type="dark" class="bg-dark">
-      <b-navbar-brand href="#" @click="goHome"><img src="../assets/logo.png" class="logo" alt="" ><router-link to="/"></router-link></b-navbar-brand>
+  <div class="liy-nav">
+    <b-navbar toggleable="md" type="dark">
+      <b-navbar-brand href="#" @click="goHome"><img src="../assets/logo.png" class="logo" alt=""><router-link to="/"></router-link></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -34,6 +34,13 @@ export default {
 </script>
 
 <style scoped>
+
+  .liy-nav {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+  }
 
   .logo {
     width: 30px;
