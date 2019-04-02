@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import gmapsInit from '../utils/gmaps.js';
-import { style } from '../utils/gmapStyles.js';
+import gmapsInit from '../../utils/gmaps.js';
+import { style } from '../../utils/gmapStyles.js';
 
 export default {
 

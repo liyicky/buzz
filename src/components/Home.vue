@@ -10,41 +10,13 @@
       background="#ababab"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-      <!-- Text slides with image
-      <b-carousel-slide
-        class="item bg h-100"
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="https://picsum.photos/1024/480/?random"
-      ></b-carousel-slide>
+      @sliding-end="onSlideEnd">
 
-      <!-- Slides with custom text -->
-      <!-- <b-carousel-slide img-src="https://picsum.photos/1024/480/?random">
-        <h1>Hello world!</h1>
-      </b-carousel-slide> -->
+        <b-carousel-slide><img class="d-block img-fluid bg bg-1 w-100"></b-carousel-slide>
+        <b-carousel-slide><img class="d-block img-fluid bg bg-2 w-100"></b-carousel-slide>
+        <b-carousel-slide><img class="d-block img-fluid bg bg-3 w-100"></b-carousel-slide>
+        <b-carousel-slide><img class="d-block img-fluid bg bg-4 w-100"></b-carousel-slide>
 
-      <!-- Slides with image only -->
-      <!-- <b-carousel-slide img-src="https://picsum.photos/1024/480/?random"></b-carousel-slide> --> -->
-
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
-        <img class="d-block img-fluid bg bg-1 w-100">
-      </b-carousel-slide>
-
-      <b-carousel-slide>
-        <img class="d-block img-fluid bg bg-2 w-100">
-      </b-carousel-slide>
-
-      <b-carousel-slide>
-        <img class="d-block img-fluid bg bg-3 w-100">
-      </b-carousel-slide>
-      
-      <b-carousel-slide>
-        <img class="d-block img-fluid bg bg-4 w-100">
-      </b-carousel-slide>
     </b-carousel>
   </div>
 </template>
