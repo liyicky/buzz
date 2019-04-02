@@ -13,6 +13,8 @@ export default {
       const google = await gmapsInit();
       const geocoder = new google.maps.Geocoder();
       const map = new google.maps.Map(this.$el, {
+        mapTypeControl: false,
+        fullscreenControl: false,
         styles: style
       });
 

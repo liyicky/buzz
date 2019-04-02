@@ -45,24 +45,7 @@
       <b-carousel-slide>
         <img class="d-block img-fluid bg bg-4 w-100">
       </b-carousel-slide>
-
-      <!-- <b-carousel-slide>
-        <img class="w-100 bg" src="https://picsum.photos/2024/1480/?random">
-      </b-carousel-slide> -->
-
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <!-- <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide> -->
     </b-carousel>
-
-    <!-- <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p> -->
   </div>
 </template>
 
@@ -113,18 +96,18 @@
 }
 
 .bg-1 {
-  background-image: url("https://picsum.photos/2024/1480?image=1084");
+  background-image: url("../assets/osake.jpg");
 }
 
 .bg-2 {
-  background-image: url("https://picsum.photos/2024/1480?image=2");
+  background-image: url("../assets/park.jpg");
 }
 
 .bg-3 {
-  background-image: url("https://picsum.photos/2024/1480?image=3");
+  background-image: url("../assets/slots.jpg");
 }
 
 .bg-4 {
-  background-image: url("https://picsum.photos/2024/1480?image=4");
+  background-image: url("../assets/pachinko.jpg");
 }
 </style>
