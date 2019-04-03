@@ -5,6 +5,8 @@
       <div class="row score-panel">
         <div class="col align-self-center score-wrapper">
 
+          <p v-for="score in scores">{{ score }}</p>
+
         </div>
       </div>
     </div>
@@ -13,8 +15,16 @@
 </template>
 
 <script>
+
 export default {
-  
+  computed: {
+    scores() {
+      return this.$store.getters.scores;
+    }
+  },
+  created() {
+
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="liy-nav">
     <b-navbar toggleable="md" type="dark">
-      <b-navbar-brand href="#" @click="goHome"><img src="../assets/logo.png" class="logo" alt=""><router-link to="/"></router-link></b-navbar-brand>
+      <b-navbar-brand href="#"><img src="../assets/logo.png" class="logo" alt=""><router-link to="/"></router-link></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -15,7 +15,7 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#" @click="createScore">Link</b-nav-item>
+          <b-nav-item href="#">Link</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -23,16 +23,9 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   methods: {
-    goHome() {
-      this.$route.push('')
-    }
-  },
-  computed: mapActions(['createScore'])
-  
+  }
 }
 </script>
 

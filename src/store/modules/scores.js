@@ -13,12 +13,15 @@ const mutations = {
 const actions = {
   createScore({commit}, score) {
     commit('CREATE_SCORE', score);
-    api.pushScores({h: "h"})
+    api.pushScores(state.scores)
   }
 }
 
 const getters = {
-  
+  scores: state => {
+    state.scores = api.getScores();
+    return state.scores;
+  }
 }
 
 export default {
