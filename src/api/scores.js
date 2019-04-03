@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export const api = {
 
-  getScores() {
+  getScores(store) {
     console.log('Fetching Scores')
     Vue.http.get('data.json')
       .then(resp => {
@@ -10,7 +10,7 @@ export const api = {
       })
       .then(data => {
         console.log(data)
-        return data;
+        store.state.scores = data;
       });
   },
 

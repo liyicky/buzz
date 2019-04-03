@@ -16,14 +16,16 @@
 
 <script>
 
+import { api } from '../../api/scores'
+
 export default {
   computed: {
     scores() {
-      return this.$store.getters.scores;
+      return this.$store.state.scores;
     }
   },
   created() {
-
+    api.getScores(this.$store);
   }
 }
 </script>

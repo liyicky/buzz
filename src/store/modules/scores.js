@@ -17,16 +17,8 @@ const actions = {
   }
 }
 
-const getters = {
-  scores: state => {
-    state.scores = api.getScores();
-    return state.scores;
-  }
-}
-
 export default {
   state,
   mutations,
-  actions,
-  getters
+  actions
 }
