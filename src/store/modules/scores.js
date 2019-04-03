@@ -1,3 +1,5 @@
+import { api } from '../../api/scores'
+
 const state = {
   scores: []
 }
@@ -11,6 +13,7 @@ const mutations = {
 const actions = {
   createScore({commit}, score) {
     commit('CREATE_SCORE', score);
+    api.pushScores({h: "h"})
   }
 }
 
