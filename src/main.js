@@ -17,6 +17,9 @@ const router = new VueRouter({
   routes
 })
 
+/* Setup Vue Resource */
+Vue.http.options.root = 'https://buzz-236307.firebaseio.com/'
+
 /* Setup Vue */
 Vue.config.productionTip = false
 
